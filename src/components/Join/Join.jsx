@@ -4,24 +4,23 @@ import emailjs from '@emailjs/browser'
 
 const Join = () => {
     const form = useRef() 
+
     const sendEmail = (e) => {
-        e.preventDefault();
-    
-        emailjs
-          .sendForm('service_orhtkzw', 'template_cmbd4ic', form.current, {
-            publicKey: 'ZB_cMhCfsWLKrd_xi',
-          })
-          .then(
-            () => {
-              console.log('SUCCESS!');
-            },
-            (error) => {
-              console.log('FAILED...', error.text);
-            },
-          );
-      };
+    e.preventDefault();
 
-
+    emailjs
+      .sendForm('service_awv1qfk', 'template_2mbdifi', form.current, {
+        publicKey: 'Nb8eitwsM-8Xs_iTC',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
     // reffeerence to make email fuctionality using EMAIL.JS
   return (
     <div className="Join" id="join-us">

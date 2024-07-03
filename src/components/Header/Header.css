@@ -27,5 +27,10 @@
         right: 2rem;
         z-index: 99;
     }
+    .header-menu{
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 2rem;
+    }
 
 }
